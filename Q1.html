@@ -1,0 +1,55 @@
+<html>
+	 <head>
+		 <title>The jQuery Example</title>
+		 <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+		 </script>
+		 <script type = "text/javascript" language = "javascript">
+			 $(document).ready(function() {
+			 $("#head").css("background-color", "Red");
+			 $("#r1").css("background-color", "Magenta");
+			 $("#r2").css("background-color", "Purple");
+			 $("#r3").css("background-color", "Cyan");
+			 $("#myimg").attr("src", "https://thumbs.dreamstime.com/b/one-big-tomato-two-small-tomatoes-wet-red-white-background-183540576.jpg");
+			$("div").css("margin-left","1500px");
+			$("button").click(function(){
+				$("div").animate({marginLeft:'0px'});
+				});
+			 });
+		 </script>
+		<style>
+			table,th,td{
+			border:1px solid black;
+			border-collapse:collapse;
+			}
+		</style>
+	 </head>
+	 <body>
+	 <div>
+		 <table>
+			<tr id="head">
+				<th>Name</th>
+				<th>Company</th>
+				<th>Years Worked</th>
+				<th>Image</th>
+			</tr>
+			<tr id="r1">
+				<td>Avin</td>
+				<td>MAHE</td>
+				<td>30</td>
+				<td><img id = "myimg" alt = "Sample image" width="70" height="20" /></td>
+			</tr>
+			<tr id="r2">
+				<td>Zach</td>
+				<td>GOOGLE</td>
+				<td>2</td>
+			</tr>
+			<tr id="r3">
+				<td>Thumu</td>
+				<td>Rolex</td>
+				<td>50</td>
+			</tr>
+		</table>
+	</div>
+	<button>Move Left</button>
+	 </body>
+</html>
